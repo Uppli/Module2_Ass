@@ -1,0 +1,53 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	text-align: center;
+	font-weight: bold;
+}
+div{
+	
+	background-color: gray;
+	float: left;
+	border: 2px solid black;
+	margin: 5px;
+}
+.smallbox{
+	height: 20px;
+	width: 100px;
+	text-align: center;
+	border: 2px solid black;
+	float: right;
+	margin-left: 100%;
+	margin-top: 0px;
+
+}
+#One{
+	background-color: #de9495;
+}
+#two{
+	background-color: #cf3637;
+	color: white
+}
+#three{
+	background-color: #e7d390;
+}
+@media (min-width: 992px){
+	div{
+		width: calc(33.3% - 10px);
+	}
+
+}
+@media (min-width: 768px) and (max-width: 991px){
+	div{
+		width: calc(50% - 10px);
+	}
+	#sushi{
+		width: calc(100% - 10px);
+	}
+}
+@media (max-width: 767px){
+div{
+	width: 100%;
+}
+}
